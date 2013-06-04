@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoproducto4"
+    tools:context=".EmisionActualizarActivity" >
+
+    <TextView
+        android:id="@+id/emisionactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="150sp"
+        android:text="@string/EmisionActualizar"
+        android:textSize="@dimen/size1" />
+
+    <TextView
+        android:id="@+id/idemisionactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/idemision"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/idEmisionActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/IDEmisionVale" 
+        android:maxLength="11">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/cantidademitidaactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cantidadE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/CantidadEmitidaActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <TextView
+        android:id="@+id/valoremisionactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/valorE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/valorEmisionActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/fechaemisionactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fechaE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/FechaEmisionActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint3"
+        android:inputType="date"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/botonactualizaremision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/actualizar"
+        android:textSize="@dimen/size1"
+        android:onClick="actualizarEmision" />
+
+</LinearLayout>

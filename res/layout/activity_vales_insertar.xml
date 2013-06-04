@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoproducto4"
+    tools:context=".ValesInsertarActivity" >
+
+    <TextView
+        android:id="@+id/titulovaleseliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="150sp"
+        android:text="@string/ValesInsertar"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/idvaleseliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idvales"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/IdValesInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintIDVale"
+        android:inputType="text" 
+        android:maxLength="14">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/idemisionvaleinsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idemisionvale" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/IdEmisionValeInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/IDEmisionVale"
+        android:inputType="text" 
+        android:maxLength="11"/>
+
+    <TextView
+        android:id="@+id/cantidadvaleseliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cantidad" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/CantidadValesELiminarl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <TextView
+        android:id="@+id/valorvalesinsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/ValorValesInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/promocionvalesinsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/promocion" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/PromocionValesInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="30" />
+
+    <TextView
+        android:id="@+id/fechavalesinsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fechaV" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/FechaValesInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint3"
+        android:inputType="date"
+        android:onClick="10" />
+
+    <Button
+        android:id="@+id/botonvalesinsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/insertar"
+        android:textSize="@dimen/size1"
+        android:onClick="insertarVale" />
+
+</LinearLayout>

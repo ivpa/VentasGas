@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConsultarClienteActivity" >
+
+    <TextView
+        android:id="@+id/telefonoConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="58dp"
+        android:text="@string/appee1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ape2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/telefonoConsultarSuc"
+        android:layout_below="@+id/telefonoConsultarSuc"
+        android:layout_marginTop="65dp"
+        android:text="@string/apellido2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/primerNombreConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Nombre1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/segundoNombreConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/primerNombreConsultarCliente"
+        android:text="@string/Nombre2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tercerNombreConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/telefonoConsultarSuc"
+        android:layout_alignRight="@+id/segundoNombreConsultarCliente"
+        android:text="@string/Nombre3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/primerApellidoConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tercerNombreConsultarCliente"
+        android:layout_alignTop="@+id/telefonoConsultarSuc"
+        android:text="@string/Apellido1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="79dp"
+        android:text="@string/idClientes"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/empresaConsultarGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/primerNombreConsultarCliente"
+        android:layout_marginTop="52dp"
+        android:text="@string/n2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="55dp"
+        android:text="@string/n1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/empresaConsultarGas"
+        android:layout_below="@+id/empresaConsultarGas"
+        android:layout_marginTop="62dp"
+        android:text="@string/n3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segundoApellidoConsultarCliente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="consultarCliente"
+        android:text="@string/consultar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="@string/consultcliente"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/segundoApellidoConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ape2"
+        android:layout_alignBottom="@+id/ape2"
+        android:layout_alignLeft="@+id/primerApellidoConsultarCliente"
+        android:text="@string/primerApe"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idConsultarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/primerNombreConsultarCliente"
+        android:ems="10"
+        android:hint="@string/IdCliente"
+        android:maxLength="7"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

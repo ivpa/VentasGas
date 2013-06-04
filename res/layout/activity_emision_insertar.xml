@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoproducto4"
+    tools:context=".EmisionInsertarActivity" >
+
+    <TextView
+        android:id="@+id/tituloemisionvale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="150sp"
+        android:text="@string/EmisionInsertar"
+        android:textSize="@dimen/size1" />
+
+    <TextView
+        android:id="@+id/idemisioninsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/idemision"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/IdEmisionInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/IDEmisionVale"
+        android:maxLength="11" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/cantidademisioninsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cantidadE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/CantidadEmisionInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" 
+        android:maxLength="5"/>
+
+    <TextView
+        android:id="@+id/valoremisioninsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/valorE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/ValorEmisionInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/fechaemisioninsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fechaE"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/FechaEmisionInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint3"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/botonemisioninsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/insertar"
+        android:textSize="@dimen/size1" 
+        android:onClick="insertarEmisionVale"/>
+
+</LinearLayout>

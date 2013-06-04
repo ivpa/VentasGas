@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoproducto4"
+    tools:context=".ValesConsultarActivity" >
+
+    <TextView
+        android:id="@+id/titulovalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="150sp"
+        android:text="@string/ConsultarVale"
+        android:textSize="@dimen/size1" />
+
+<TextView
+        android:id="@+id/idvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idvales" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/idValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintIDVale"
+        android:inputType="text"
+        android:maxLength="14" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/idemisionvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idemisionvale"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/idEmisionValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/IDEmisionVale"
+        android:inputType="text"
+        android:maxLength="11" />
+
+    <TextView
+        android:id="@+id/cantidadvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cantidad" 
+        android:textSize="@dimen/size1"/>
+
+    <EditText
+        android:id="@+id/CantidadValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <TextView
+        android:id="@+id/valorvvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/ValorValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/promocionvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/promocion"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/PromocionValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="text" 
+        android:maxLength="30"/>
+
+    <TextView
+        android:id="@+id/fechavalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fechaV"
+        android:textSize="@dimen/size1" />
+
+    <EditText
+        android:id="@+id/fehcaValesConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/botonvalesconsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/consultar" 
+        android:textSize="@dimen/size1"
+        android:onClick="consultarVale"/>
+    
+</LinearLayout>

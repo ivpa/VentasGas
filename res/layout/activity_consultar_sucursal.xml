@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConsultarSucursalActivity" >
+
+    <TextView
+        android:id="@+id/empresaConsultarGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="46dp"
+        android:text="@string/ingresarSucursalLabel3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/empresaConsultarGas"
+        android:layout_below="@+id/empresaConsultarGas"
+        android:layout_marginTop="51dp"
+        android:text="@string/ingresarSucursalLabel4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="71dp"
+        android:text="@string/idSuc"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/direccionConsultarSucursal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idConsultarSuc"
+        android:layout_alignTop="@+id/empresaConsultarGas"
+        android:text="@string/ConsultarSucursalLabel3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nombreConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/empresaConsultarGas"
+        android:layout_alignLeft="@+id/direccionConsultarSucursal"
+        android:text="@string/ConsultarSucursalLabel3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/telefonoConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/direccionConsultarSucursal"
+        android:text="@string/ConsultarSucursalLabel3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/botonConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefonoConsultarSuc"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:onClick="consultarSucursal"
+        android:text="@string/botonConsultar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/idConsultarSuc"
+        android:layout_marginTop="203dp"
+        android:text="@string/consultarSucursalLabel1"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/idConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/botonConsultarSuc"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:hint="@string/idSucursal"
+        android:maxLength="6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="52dp"
+        android:text="@string/idGaso"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="48dp"
+        android:text="@string/ingresarSucursalLabel2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/idGasolineraConsultarSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nombreConsultarSuc"
+        android:layout_alignTop="@+id/textView4"
+        android:text="@string/idGasolineria"
+        android:textSize="20sp" />
+
+</RelativeLayout>

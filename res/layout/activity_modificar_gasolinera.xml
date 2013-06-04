@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ModificarGasolineraActivity" >
+
+    <EditText
+        android:id="@+id/empresaModificarGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/idModificarGas"
+        android:ems="10"
+        android:hint="@string/ingresarSucursalEdit1"
+        android:maxLength="8"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idModificarGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="69dp"
+        android:ems="10"
+        android:hint="@string/idGasolinera"
+        android:maxLength="3"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="257dp"
+        android:text="@string/modificarGasLabel1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/empresaModificarGas"
+        android:layout_marginBottom="26dp"
+        android:layout_toLeftOf="@+id/botonModificarGas"
+        android:text="@string/eliminarGasLabel2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="149dp"
+        android:text="@string/ingresarGasLabel3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/botonModificarGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empresaModificarGas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="actualizarGasolinera"
+        android:text="@string/botonModificarGasolinera"
+        android:textSize="20sp" />
+
+</RelativeLayout>
